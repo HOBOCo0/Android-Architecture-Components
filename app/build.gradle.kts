@@ -53,4 +53,5 @@ dependencies {
 
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    implementation("com.google.code.gson:gson:2.8.6")
 }
