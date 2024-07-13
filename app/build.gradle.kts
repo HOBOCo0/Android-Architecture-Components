@@ -53,5 +53,8 @@ dependencies {
 
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    // for json parsing
     implementation("com.google.code.gson:gson:2.8.6")
+    // to use live data
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
 }
