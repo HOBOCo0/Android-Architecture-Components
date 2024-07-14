@@ -42,5 +42,9 @@ class MainActivityBind : AppCompatActivity() {
         binding.mainViewModel = myViewModelBind
         // if you are using liveData in binding you have to set its life cycle owner
         binding.lifecycleOwner = this
+
+        val postobj = Post("Introduction To Cloud", "Cloud is a technology used these" +
+                " days alot","https://png.pngtree.com/element_our/sm/20180410/sm_5acd1797b5783.jpg")
+        binding.post = postobj
     }
 }

@@ -10,6 +10,9 @@
         <variable
             name="mainViewModel"
             type="com.example.jetpackarcitecturecomponetspractice.databinding.MainViewModelBind" />
+        <variable
+            name="post"
+            type="com.example.jetpackarcitecturecomponetspractice.databinding.Post" />
 
     </data>
 
@@ -20,6 +23,25 @@
         android:gravity="center"
         android:orientation="vertical"
         tools:context=".databinding.MainActivityBind">
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{post.title}"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/imageCloud"
+            android:layout_width="200dp"
+            imageFromUrl="@{post.url}"
+            android:layout_height="200dp"
+            />
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{post.description}"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/quoteEditText"
