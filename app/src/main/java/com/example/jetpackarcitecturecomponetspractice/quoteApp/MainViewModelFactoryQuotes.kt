@@ -1,4 +1,4 @@
-package com.example.jetpackarcitecturecomponetspractice
+package com.example.jetpackarcitecturecomponetspractice.quoteApp
 
 import android.content.Context
 import androidx.lifecycle.ViewModel

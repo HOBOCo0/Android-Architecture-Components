@@ -1,4 +1,4 @@
-package com.example.jetpackarcitecturecomponetspractice
+package com.example.jetpackarcitecturecomponetspractice.viewModel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

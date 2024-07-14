@@ -1,4 +1,4 @@
-package com.example.jetpackarcitecturecomponetspractice
+package com.example.jetpackarcitecturecomponetspractice.liveData
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

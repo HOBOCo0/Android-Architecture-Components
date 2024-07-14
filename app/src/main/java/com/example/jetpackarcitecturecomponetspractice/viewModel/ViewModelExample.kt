@@ -1,12 +1,12 @@
-package com.example.jetpackarcitecturecomponetspractice
+package com.example.jetpackarcitecturecomponetspractice.viewModel
 
 import android.os.Bundle
-import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
+import com.example.jetpackarcitecturecomponetspractice.R
 import com.example.jetpackarcitecturecomponetspractice.databinding.ActivityViewModelExampleBinding
 
 class ViewModelExample : AppCompatActivity() {
@@ -19,7 +19,7 @@ class ViewModelExample : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         // instantiating our viewModel object (view models are life cycle aware components so we need to pass the owner and get the custom viewmodel class)
-        myViewModel = ViewModelProvider(this,MainViewModelFactory(10)).get(MainViewModel::class.java)
+        myViewModel = ViewModelProvider(this, MainViewModelFactory(10)).get(MainViewModel::class.java)
 
         enableEdgeToEdge()
         setContentView(binding.root)

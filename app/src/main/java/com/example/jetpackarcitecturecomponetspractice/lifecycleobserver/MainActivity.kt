@@ -1,4 +1,4 @@
-package com.example.jetpackarcitecturecomponetspractice
+package com.example.jetpackarcitecturecomponetspractice.lifecycleobserver
 
 import android.os.Bundle
 import android.util.Log
@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.jetpackarcitecturecomponetspractice.R
 
 // our observer is created and we need to attach the observer here..
 class MainActivity : AppCompatActivity() {

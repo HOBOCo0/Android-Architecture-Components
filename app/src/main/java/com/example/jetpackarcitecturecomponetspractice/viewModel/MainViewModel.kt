@@ -1,4 +1,4 @@
-package com.example.jetpackarcitecturecomponetspractice
+package com.example.jetpackarcitecturecomponetspractice.viewModel
 import androidx.lifecycle.ViewModel
 
 class MainViewModel(val initialValues: Int): ViewModel() {

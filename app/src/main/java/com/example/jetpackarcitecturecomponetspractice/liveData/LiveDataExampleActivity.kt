@@ -1,10 +1,8 @@
-package com.example.jetpackarcitecturecomponetspractice
+package com.example.jetpackarcitecturecomponetspractice.liveData
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import com.example.jetpackarcitecturecomponetspractice.databinding.ActivityLiveDataExampleBinding
 
@@ -14,7 +12,7 @@ class LiveDataExampleActivity : AppCompatActivity() {
         ActivityLiveDataExampleBinding.inflate(layoutInflater)
     }
 
-    private lateinit var myViewModel:LiveDataViewModel
+    private lateinit var myViewModel: LiveDataViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

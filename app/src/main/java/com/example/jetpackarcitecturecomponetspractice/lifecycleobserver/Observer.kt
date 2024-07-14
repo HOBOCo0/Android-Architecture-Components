@@ -1,10 +1,9 @@
-package com.example.jetpackarcitecturecomponetspractice
+package com.example.jetpackarcitecturecomponetspractice.lifecycleobserver
 
 import android.util.Log
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
-import androidx.viewpager2.widget.ViewPager2.Orientation
 
 /*
 ->This is the observer class which observes the life cycle of other classes which are life cycle owners.

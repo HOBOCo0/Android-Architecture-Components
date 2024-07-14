@@ -1,11 +1,9 @@
-package com.example.jetpackarcitecturecomponetspractice
+package com.example.jetpackarcitecturecomponetspractice.quoteApp
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import com.example.jetpackarcitecturecomponetspractice.databinding.ActivityQuoteAppBinding
 
@@ -14,12 +12,13 @@ class QuoteApp : AppCompatActivity() {
     private val binding:ActivityQuoteAppBinding by lazy {
         ActivityQuoteAppBinding.inflate(layoutInflater)
     }
-     private lateinit var quoteViewModel:MainViewModelQuotes
+     private lateinit var quoteViewModel: MainViewModelQuotes
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
-        quoteViewModel = ViewModelProvider(this,MainViewModelFactoryQuotes(application)).get(MainViewModelQuotes::class.java)
+        quoteViewModel = ViewModelProvider(this, MainViewModelFactoryQuotes(application)).get(
+            MainViewModelQuotes::class.java)
 
         setQuote(quoteViewModel.getQuote())
 
@@ -40,7 +39,7 @@ class QuoteApp : AppCompatActivity() {
             }
         }
     }
-    fun setQuote(quote:QuoteDataModel){
+    fun setQuote(quote: QuoteDataModel){
         binding.apply {
             quoteText.text = quote.text
             quoteAuthor.text = quote.author
