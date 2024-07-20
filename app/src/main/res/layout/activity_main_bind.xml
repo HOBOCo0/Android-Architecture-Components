@@ -33,7 +33,7 @@
         <ImageView
             android:id="@+id/imageCloud"
             android:layout_width="200dp"
-            imageFromUrlll="@{post.url}"
+            imageFromUrlll="@{post.url }"
             android:layout_height="200dp"
             />
         <TextView
