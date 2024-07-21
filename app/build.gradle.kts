@@ -64,4 +64,12 @@ dependencies {
 
     // glide to load images
     implementation ("com.github.bumptech.glide:glide:4.16.0")
+
+    // retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.11.0")
+    // gson convertor
+    implementation ("com.squareup.retrofit2:converter-gson:2.11.0")
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0-RC")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0-RC")
 }
